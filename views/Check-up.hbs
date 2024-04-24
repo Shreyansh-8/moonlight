@@ -25,6 +25,7 @@
 
 
     <script type="text/javascript">
+    let numCorrect = 0;
         (function(){
     // Functions
     function buildQuiz(){
@@ -71,7 +72,7 @@
       const answerContainers = quizContainer.querySelectorAll('.answers');
   
       // keep track of user's answers
-      let numCorrect = 0;
+      
   
       // for each question...
       myQuestions.forEach( (currentQuestion, questionNumber) => {

@@ -75,7 +75,7 @@ app.get('/home',(req,res)=>{
     res.status(200).render('index.hbs')
 });
 app.get("/quiz",(req,res)=>{
-    res.status(200).render('check-up.hbs')
+    res.status(200).render('Check-up.hbs')
 });
 app.get("/info",(req,res)=>{
     res.status(200).render('info.hbs')
