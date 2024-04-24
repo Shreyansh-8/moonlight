@@ -117,7 +117,7 @@
     let count=0;
     result.forEach(myFunction);
     function myFunction(value){
-         if(value["City"]==city){
+         if(value["City"].toLowerCase()==city.toLowerCase()){
             
             if(!value["Hospital"].includes("Eye") && !value["Hospital"].includes("eye") && !value["Hospital"].includes("Heart") && !value["Hospital"].includes("heart") ){
             console.log(value["Hospital"]);
