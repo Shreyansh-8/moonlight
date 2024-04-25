@@ -72,7 +72,7 @@ app.get('/login', (req, res) => {
     res.status(200).render('login.hbs');
 });
 app.get('/home',(req,res)=>{
-    res.status(200).render('index.hbs')
+    res.status(200).render('index.hbs');
 });
 app.get("/quiz",(req,res)=>{
     res.status(200).render('Check-up.hbs')
@@ -155,7 +155,17 @@ app.post('/home', async (req, res) => {
 
 
 
-
+// app.get("/logout",(req,res)=>{
+//     req.session.destroy(function(err){
+//         if(err){
+//             console.log(err);
+//             res.send("Error")
+//         }
+//         else{
+//             res.render('landing_page.hbs')
+//         }
+//     })
+// })
 
 
 
